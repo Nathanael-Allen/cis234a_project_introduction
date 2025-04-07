@@ -1,0 +1,203 @@
+/* CSS RESET */
+
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+  box-sizing: border-box;
+  border: 0 solid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Start of Styling */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+h2 {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+form {
+  border: 1px black solid;
+  border-radius: .25rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  min-width: 512px;
+  padding-bottom: 1rem;
+}
+
+form > h2 {
+  text-align: center;
+}
+
+form > h2:first-child:not(div) {
+  margin-top: 1rem;
+}
+
+form > p {
+  text-align: center;
+}
+
+form > input:first-of-type, form > input:last-of-type {
+  margin-top: 1rem;
+}
+
+textarea {
+  resize: none;
+  overflow: scroll;
+}
+
+input, textarea {
+  border: 1px solid black;
+  border-radius: .25rem;
+  padding: .5rem;
+  font-size: 1rem;
+  margin-inline: 1rem;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  /* outline: #008099 2px solid;
+  outline-offset: 1px; */
+  border: #008099 1px solid;
+}
+
+button, .submitButton {
+  background-color: #008099;
+  font-weight: 500;
+  font-size: large;
+  color: white;
+  padding: 1rem;
+  max-width: 50%;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.utilButton {
+  background-color: #008099;
+  font-weight: 500;
+  font-size: large;
+  color: white;
+  padding: .5rem;
+  width: fit-content;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover, .submitButton:hover, .utilButton:hover {
+  box-shadow: inset 0px 0px 5px 5px rgb(255, 255, 255, .2);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.divider {
+  height: 2rem;
+  margin-bottom: .5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 128, 153, 0.7), rgba(0, 128, 153, 0.7)), url("pcc_header.png");
+}
+
+.selectionDiv {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-inline: 1rem;
+  margin-top: 1rem;
+}
+
+.filterDiv {
+  display: flex;
+  align-items: center;
+  margin-inline: 1rem;
+  margin-top: 1rem;
+}
+
+.selectionDiv > select {
+  padding: .5rem;
+  border-radius: .25rem;
+}
+
+#notificationLogDiv {
+  height: 24rem;
+  overflow: scroll;
+  border: 1px black solid;
+  border-radius: .25rem;
+  border-top: none;
+}
+
+.notificationLogItem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  font-size: small;
+  border-bottom: 1px black solid;
+  padding: 1rem;
+  max-width: 512px;
+}
+
+.notificationLogItem h3 {
+  font-weight: 600;
+}
+
+.flexDiv {
+  display: flex;
+  gap: .5rem;
+}

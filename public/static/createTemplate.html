@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title></title>
+</head>
+<body class="container">
+  <main class="">
+    <div id="account-creation-div">
+      <form action="/createTemplate" method="post">
+        <h2>Create a Notification Template</h2>
+        <input type="text" name="templateName" name="templateName" placeholder="Template Name" required>
+        <input type="text" name="notificationSubject" id="notificationSubject" placeholder="Template Subject" required>
+        <textarea name="notificationMessage" id="notificationMessage" cols="30" rows="20" placeholder="Template Message"></textarea>
+        <input type="submit" name="submitTemplate" id="submitTemplate" value="Save Template" class="submitButton">
+      </form>
+    </div>
+  </main>
+</body>
+</html>

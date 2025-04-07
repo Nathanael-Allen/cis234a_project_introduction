@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title></title>
+</head>
+<body class="container">
+  <main class="">
+    <div id="account-creation-div">
+      <form action="/sendMessage" method="post">
+        <h2>Send A Food Pantry Notification</h2>
+        <div class="selectionDiv">
+          <label for="campusSelect">Select Campus: </label>
+          <select name="campusSelect" id="campusSelect">
+            <option value="">PCC - Cascade</option>
+            <option value="">PCC - Rock Creek</option>
+            <option value="">PCC - Sylvania</option>
+            <option value="">PCC - SE</option>
+            <option value="">ALL</option>
+          </select>
+        </div>
+        <input type="text" name="notificationSubject" id="notificationSubject" placeholder="Subject">
+        <textarea name="notificationMessage" id="notificationMessage" cols="30" rows="20" placeholder="message"></textarea>
+        <input type="submit" name="messageSubmit" id="messageSubmit" value="Send Notification" class="submitButton">
+      </form>
+    </div>
+  </main>
+</body>
+</html>
