@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <title>Send Notification - Food Pantry</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      html {
+        height: 100%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #ddd;
+        height: 100%;
+      }
+
+      main {
+        border: 1px solid black;
+        max-height: 100%;
+        margin: 1rem;
+        margin-top: 2rem;
+      }
+
+      thead td {
+        font-weight: bold;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      table {
+        background: #ddd;
+        /* box-shadow: 0 0 0.5em rgba(0,0,0,0.5); */
+        width: 100%;
+        margin: auto;
+        max-height: 100%;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 0.5em;
+        background: #eee;
+        border-bottom: 1px solid #ddd;
+      }
+      tbody {
+        overflow-y: clip;
+      }
+      th {
+        border-bottom: 1px solid #ccc;
+        background-color: #008099;
+        width: 16em;
+        color: white;
+      }
+
+      #control-bar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-bottom: 0.5em;
+        padding: 0.2em;
+      }
+
+      #control-bar input {
+        font-family: inherit;
+        font-size: 1em;
+        padding: 0.2em;
+      }
+
+      button[type="submit"] {
+        grid-column: span 2;
+        font-size: 1em;
+        padding: 0.5em;
+        background: #4a77ca;
+        border: none;
+        color: white;
+      }
+
+      td:has(input),
+      td:has(textarea) {
+        padding: 0.2em;
+      }
+      table input,
+      table textarea {
+        width: 100%;
+        height: 100%;
+        padding: 0.3em;
+        font-size: 1em;
+        font-family: inherit;
+      }
+
+      table textarea {
+        height: 300px;
+        overflow: scroll;
+        resize: none;
+      }
+      button {
+        background-color: #008099;
+        font-weight: 500;
+        font-size: large;
+        color: white;
+        padding: 1rem;
+        max-width: 50%;
+        margin: auto;
+        border: none;
+        cursor: pointer;
+        margin: 1rem;
+      }
+      .nav-list {
+        background-color: #008099;
+        width: 100%;
+        min-height: 3rem;
+        display: flex;
+        color: white;
+        align-items: center;
+        padding-inline: 2rem;
+        gap: 2rem;
+      }
+
+      .nav-bar-text {
+        font-weight: 600;
+        font-size: x-large;
+        border-right: 1px solid white;
+        padding-right: 2rem;
+      }
+
+      .nav-link {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-bar-text">PCC Food Pantry Notifications</li>
+        <li><a href="" class="nav-link">send notification</a></li>
+        <li><a href="" class="nav-link">notification log</a></li>
+        <li><a href="nav-link" class="nav-link">logout</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="control-bar">
+        <span style="font-weight: bold; font-size: 1.5em"
+          >Send New Notification</span
+        >
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <th>Subject</th>
+            <td><input type="text" value="Example notification #7" /></td>
+          </tr>
+          <tr>
+            <th>Recipients</th>
+            <td>All subscribers (2275)</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <textarea>
+  Hello, subscribers
+  
+  There's a new food opportunity in lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+  
+  Here's another block of filler text lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+  
+  - Panther Food Pantry Staff
+                  </textarea
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="width: 100%; display: flex; justify-content: space-around;">
+        <button>Send to <strong>2275</strong> subscribers</button>
+        <button style="margin-left: auto;">clear form</button>
+      </div>
+    </main>
+  </body>
+</html>

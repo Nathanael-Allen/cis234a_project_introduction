@@ -16,6 +16,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(3000, () => {
-  console.log(new Date().toLocaleTimeString())
   console.log("Server started\nhttp://localhost:3000");
 })

@@ -63,6 +63,28 @@ main {
   min-height: 100dvh;
 }
 
+.nav-list {
+  background-color: #008099;
+  width: 100%;
+  min-height: 3rem;
+  display: flex;
+  color: white;
+  align-items: center;
+  padding-inline: 2rem;
+  gap: 2rem;
+}
+
+.nav-bar-text {
+  font-weight: 600;
+  font-size: x-large;
+  border-right: 1px solid white;
+  padding-right: 2rem;
+}
+
+.nav-link {
+  color: white;
+}
+
 h2 {
   font-size: x-large;
   font-weight: 600;
@@ -133,7 +155,6 @@ button, .submitButton {
   color: white;
   padding: .5rem;
   width: fit-content;
-  margin: auto;
   border: none;
   cursor: pointer;
 }
@@ -149,6 +170,7 @@ button:hover, .submitButton:hover, .utilButton:hover {
 
 .divider {
   height: 2rem;
+  width: 100%;
   margin-bottom: .5rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -200,4 +222,25 @@ button:hover, .submitButton:hover, .utilButton:hover {
 .flexDiv {
   display: flex;
   gap: .5rem;
+}
+
+.form-input-div {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+.form-input-div > label {
+  width: 15%;
+}
+
+.form-input-div > input {
+  width: 85%;
+}
+
+.error-div {
+  font-size: small;
+  color: rgb(175, 2, 2);
 }

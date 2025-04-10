@@ -1,0 +1,229 @@
+<?php
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Notification Log - Food Pantry</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        list-style: none;
+      }
+      body {
+        background: #ddd;
+      }
+
+      main {
+        margin-top: 3rem;
+        border: 1px black solid;
+        margin: 1rem;
+        padding: .5rem;
+      }
+
+      thead td {
+        font-weight: bold;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      table {
+        background: #ddd;
+        /* box-shadow: 0 0 0.5em rgba(0,0,0,0.5); */
+        width: 100%;
+        max-height: 100%;
+        margin: auto;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 0.5em;
+      }
+      tbody {
+        overflow-y: clip;
+        background: #eee;
+      }
+      tr {
+        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+      }
+      tbody tr:hover {
+        /* box-shadow: 0 0.02em 0.2em rgba(0,0,0,0.5); */
+        background: #fff;
+      }
+
+      button:hover,
+      .submitButton:hover,
+      .utilButton:hover {
+        box-shadow: inset 0px 0px 5px 5px rgb(255, 255, 255, 0.2);
+      }
+
+      #control-bar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-bottom: 0.5em;
+        padding: 0.2em;
+      }
+
+      #control-bar input {
+        font-family: inherit;
+        font-size: 1em;
+        padding: 0.2em;
+      }
+
+      .submitButton {
+        background-color: #008099;
+        font-weight: 500;
+        font-size: 1em;
+        color: white;
+        padding: 0.75rem !important;
+        max-width: 50%;
+        margin: auto;
+        border: none;
+        cursor: pointer;
+      }
+
+      .flex-spacer {
+        flex: auto;
+      }
+
+      .nav-list {
+        background-color: #008099;
+        width: 100%;
+        min-height: 3rem;
+        display: flex;
+        color: white;
+        align-items: center;
+        padding-inline: 2rem;
+        gap: 2rem;
+      }
+
+      .nav-bar-text {
+        font-weight: 600;
+        font-size: x-large;
+        border-right: 1px solid white;
+        padding-right: 2rem;
+      }
+
+      .nav-link {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-bar-text">PCC Food Pantry Notifications</li>
+        <li><a href="" class="nav-link">send notification</a></li>
+        <li><a href="" class="nav-link">notification log</a></li>
+        <li><a href="nav-link" class="nav-link">logout</a></li>
+      </ul>
+    </nav>
+    <main>
+
+      <div id="control-bar" style="display: flex; justify-content: center">
+        <h2 style="font-weight: bold; font-size: 1.5em; text-align: center">
+          Notification Log
+        </h2>
+      </div>
+      <div id="control-bar">
+        <form>
+          <label>Filter by Date: </label>
+          <input id="start-date" name="start-date" type="date" />
+          <span>-</span>
+          <input id="start-date" name="start-date" type="date" />
+          <input type="submit" value="Search" class="submitButton" />
+        </form>
+        <div class="flex-spacer"></div>
+        <div>
+          <a href="#" class="page-nav">&larr;</a>
+          Page 1 of 3
+          <a href="#" class="page-nav">&rarr;</a>
+        </div>
+      </div>
+      <table>
+        <thead
+          style="
+            border: 1px black solid;
+            background-color: #008099;
+            color: white;
+            text-align: center;
+          "
+        >
+          <tr>
+            <td>Sender</td>
+            <td>Subject</td>
+            <td>Date/Time</td>
+            <td>Recipients</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bob</td>
+            <td>Example Notification #7</td>
+            <td>March 18, 2025, 9:50 AM</td>
+            <td>2275</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>Example Notification #7</td>
+            <td>March 18, 2025, 9:50 AM</td>
+            <td>2275</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>Example Notification #7</td>
+            <td>March 18, 2025, 9:50 AM</td>
+            <td>2275</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>Example Notification #7</td>
+            <td>March 18, 2025, 9:50 AM</td>
+            <td>2275</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>Example Notification #7</td>
+            <td>March 18, 2025, 9:50 AM</td>
+            <td>2275</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>Example Notification #7</td>
+            <td>March 18, 2025, 9:50 AM</td>
+            <td>2275</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>Example Notification #7</td>
+            <td>March 18, 2025, 9:50 AM</td>
+            <td>2275</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>Example Notification #7</td>
+            <td>March 18, 2025, 9:50 AM</td>
+            <td>2275</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>Example Notification #7</td>
+            <td>March 18, 2025, 9:50 AM</td>
+            <td>2275</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

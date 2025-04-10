@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login - Food Pantry</title>
+    <style>
+        body {
+            background: #ddd;
+        }
+
+        #login-form {
+            background: #eee;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            grid-auto-rows: max-content;
+            gap: 1em;
+            margin-inline: auto;
+            width: 50%;
+            align-items: center;
+            min-height: 335px;
+        }
+
+        #login-form .form-label {
+            grid-column: span 2;
+            text-align: center;
+            margin: 0;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+  <nav>
+    <ul class="nav-list">
+      <li class="nav-bar-text">PCC Food Pantry Notifications</li>
+      <li><a href="" class="nav-link">login</a></li>
+      <li><a href="nav-link" class="nav-link">sign up!</a></li>
+    </ul>
+  </nav>
+    <form id="login-form">
+     <div class="divider"></div>
+      <h2>Login</h2>
+        <div class="form-input-div">
+          <label for="email-username">Username</label>
+          <input id="email-username" name="email-username" type="text" placeholder="">
+        </div>
+        <div class="form-input-div">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="">
+        </div>
+        <div class="error-div"><p>Invalid username or password please try again</p></div>
+        <input class="submitButton" type="submit" value="Login">
+        <div style="grid-column: 2; text-align: right;"><a href="register.php">Create a new account</a></div>
+    </form>
+</body>
+</html>

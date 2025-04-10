@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Notification Details - Food Pantry</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        list-style: none;
+        margin: 0;
+      }
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        background: #ddd;
+        height: 100%;
+      }
+
+      main {
+        border: 1px solid black;
+        margin: 1rem;
+      }
+
+      thead td {
+        font-weight: bold;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      table {
+        background: #ddd;
+        /* box-shadow: 0 0 0.5em rgba(0,0,0,0.5); */
+        width: 100%;
+        margin: auto;
+        max-height: 100%;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 0.5em;
+        background: #eee;
+        border-bottom: 1px solid #ddd;
+      }
+      tbody {
+        overflow-y: clip;
+      }
+      th {
+        border-bottom: 1px solid #ccc;
+        background-color: #008099;
+        width: 16em;
+        color: white;
+      }
+
+      #control-bar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-bottom: 0.5em;
+        padding: 0.2em;
+      }
+
+      #control-bar input {
+        font-family: inherit;
+        font-size: 1em;
+        padding: 0.2em;
+      }
+
+      button[type="submit"] {
+        grid-column: span 2;
+        font-size: 1em;
+        padding: 0.5em;
+        background: #4a77ca;
+        border: none;
+        color: white;
+      }
+      .flex-spacer {
+        flex: auto;
+      }
+      
+      .nav-list {
+        background-color: #008099;
+        width: 100%;
+        min-height: 3rem;
+        display: flex;
+        color: white;
+        align-items: center;
+        padding-inline: 2rem;
+        gap: 2rem;
+      }
+
+      .nav-bar-text {
+        font-weight: 600;
+        font-size: x-large;
+        border-right: 1px solid white;
+        padding-right: 2rem;
+      }
+
+      .nav-link {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-bar-text">PCC Food Pantry Notifications</li>
+        <li><a href="" class="nav-link">send notification</a></li>
+        <li><a href="" class="nav-link">notification log</a></li>
+        <li><a href="nav-link" class="nav-link">logout</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="control-bar">
+        <a href="notification_log.php">&larr; Back to log</a>
+      </div>
+      <div id="control-bar">
+        <h2 style="font-weight: bold; font-size: 1.5em;"
+          >Details for Notification `Example notification #7`</h2
+        >
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <th>Subject</th>
+            <td>Example notification #7</td>
+          </tr>
+          <tr>
+            <th>Date/time sent</th>
+            <td>March 18, 2025, 9:50 PM</td>
+          </tr>
+          <tr>
+            <th>Sender</th>
+            <td>Bob</td>
+          </tr>
+          <tr>
+            <th>Recipient count</th>
+            <td>2275</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Hello, subscribers</p>
+              <p>
+                There's a new food opportunity in lorem ipsum dolor sit amet
+                consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                pellentesque sem placerat. In id cursus mi pretium tellus duis
+                convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar
+                vivamus fringilla lacus nec metus bibendum egestas. Iaculis
+                massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit
+                semper vel class aptent taciti sociosqu. Ad litora torquent per
+                conubia nostra inceptos himenaeos.
+              </p>
+              <p>
+                Here's another block of filler text lorem ipsum dolor sit amet
+                consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                pellentesque sem placerat. In id cursus mi pretium tellus duis
+                convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar
+                vivamus fringilla lacus nec metus bibendum egestas. Iaculis
+                massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit
+                semper vel class aptent taciti sociosqu. Ad litora torquent per
+                conubia nostra inceptos himenaeos.
+              </p>
+              <p>- Panther Food Pantry Staff</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
